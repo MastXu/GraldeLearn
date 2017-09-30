@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Build-date: Thu Sep 28 20:03:17 CST 2017
+Implementation-Version: 1.0-SNAPSHOT
+Created-By: lalala
+Main-Class: com.learn.netty.App
+
