@@ -61,6 +61,10 @@ repositories {
         name 'spring plugins'
         url 'http://repo.spring.io/plugins-release'
     }
+    maven {
+        name 'EBI'
+        url 'https://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
+    }
     // mavenCentral()
     jcenter()
 }
@@ -110,7 +114,15 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-undertow" // recommand using undertow
     // https://mvnrepository.com/artifact/io.netty/netty-all
     compile group: 'io.netty', name: 'netty-all', version: '4.1.15.Final'
+
+    //  OkHttp
+    // https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
+    compile group: 'com.squareup.okhttp3', name: 'okhttp', version: '3.9.0'
+    // https://mvnrepository.com/artifact/net.sourceforge.cpdetector/cpdetector
+    compile("cpdetector:cpdetector:1.0.7")
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
 
